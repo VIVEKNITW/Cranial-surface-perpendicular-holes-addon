@@ -65,12 +65,7 @@ class Cranial_OT_cylinders(bpy.types.Operator):
             bpy.ops.transform.rotate(value=1.5708, orient_axis='X', constraint_axis=(True, False, False))
             bpy.context.object.name = "finalcyl"
 
-            # bpy.ops.object.select_all(action='DESELECT')
-            # bpy.data.objects['TEMP'].select_set(True)
-            # bpy.context.view_layer.objects.active = bpy.data.objects['TEMP']
-            # ob = bpy.context.selected_objects
-            # ob[0].name = "finalcyl"
-            delete_obj(bpy.data.objects[obj])
+            delete_obj(bpy.data.objects["Temp axis"])
             
             
             
